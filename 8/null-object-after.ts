@@ -23,7 +23,7 @@ class SegmentGroup implements ISegmentGroup, INullObject {
   provider: string
 
   constructor({  
-    id,
+    id = '',
     name = '',
     effectiveSize = 0,
     dataVendorCost = 0,

@@ -11,7 +11,7 @@ const getCarFactories2 = async (carIds: string[]) => {
   }
 }
 
-function doSomeThingWithCarsFactorie(ids){
+function doSomeThingWithCarsFactories(ids){
   getCarFactories2(ids).then((factories=>{
     // do some staff  
   }))
