@@ -30,12 +30,12 @@ function figureGoingToFromUrl(path: string) {
   }
 }
 
-function maxPrimes(limit) {
+function maxPrime(limit) {
   let prime = 0,
     i = 0,
     j = 0
   OUTER: for (i = 0; i < limit; ++i) {
-    if (i <= 2) {
+    if (i < 2) {
       continue
     }
     for (j = 2; j < i; ++j) {

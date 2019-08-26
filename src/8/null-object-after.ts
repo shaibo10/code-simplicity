@@ -28,7 +28,7 @@ class SegmentGroup implements ISegmentGroup, INullObject {
     effectiveSize = 0,
     dataVendorCost = 0,
     provider = ''
-  } : ISegmentGroup = {}){
+  } : ISegmentGroup){
     this.id = id
     this.name = name
     this.effectiveSize = effectiveSize
