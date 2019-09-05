@@ -1,14 +1,14 @@
-let enableEmpty
-let radioButtonA
-let radioButtonB
+let enableEmpty = false
+let radioButtonA = false
+let radioButtonB = false
 
 function switchRadioButtonAV1() {
     radioButtonA = enableEmpty && !radioButtonA || !enableEmpty && true
-    radioButtonB = enableEmpty && !radioButtonA && radioButtonB || !enableEmpty && flase
+    radioButtonB = enableEmpty && !radioButtonA && radioButtonB || !enableEmpty && false
 }
 
 
-
+// simple boolean algebraic
 
 
 

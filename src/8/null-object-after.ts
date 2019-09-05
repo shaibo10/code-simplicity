@@ -15,20 +15,19 @@ interface INullObject{
 
 
 class SegmentGroup implements ISegmentGroup, INullObject {
-
   id: string
   name: string
   effectiveSize: number
   dataVendorCost: number
   provider: string
 
-  constructor({  
+  constructor({
     id = '',
     name = '',
     effectiveSize = 0,
     dataVendorCost = 0,
-    provider = ''
-  } : ISegmentGroup){
+    provider = '',
+  } : ISegmentGroup) {
     this.id = id
     this.name = name
     this.effectiveSize = effectiveSize
@@ -45,7 +44,7 @@ class SegmentGroup implements ISegmentGroup, INullObject {
   }
 
   getSegmentCost(): number {
-      return this.effectiveSize * this.dataVendorCost
+    return this.effectiveSize * this.dataVendorCost
   }
 }
 

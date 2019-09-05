@@ -3,19 +3,19 @@ class AdService {
   AdModels = new Map<AdTypes, any>([
     [AdTypes.Article, ArticleAd],
     [AdTypes.Video, VideoAd],
-    [AdTypes.SocialNetwork, SocialNetworkAd]
+    [AdTypes.SocialNetwork, SocialNetworkAd],
   ]);
 
   getAd(type: AdTypes, adData) {
-    const AdModel = this.AdModels.get(type);
-    return new AdModel(adData);
+    const AdModel = this.AdModels.get(type)
+    return new AdModel(adData)
   }
 }
 
 enum AdTypes {
-  Video = "video",
-  Article = "article",
-  SocialNetwork = "social-network"
+  Video = 'video',
+  Article = 'article',
+  SocialNetwork = 'social-network'
 }
 
 interface IAd {

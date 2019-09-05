@@ -1,26 +1,31 @@
 class Airplane {
-    // ...
-  }
-  
-  class Boeing777 extends Airplane {
-    // ...
-    getCruisingAltitude() {
-      return this.getMaxAltitude() - this.getPassengerCount();
-    }
-  }
-  
-  class AirForceOne extends Airplane {
-    // ...
-    getCruisingAltitude() {
-      return this.getMaxAltitude();
-    }
-  }
-  
-  class Cessna extends Airplane {
-    // ...
-    getCruisingAltitude() {
-      return this.getMaxAltitude() - this.getFuelExpenditure();
-    }
+  // ...
+  getMaxAltitude(){}
+}
+
+class Boeing777 extends Airplane {
+  // ...
+  getCruisingAltitude() {
+    return this.getMaxAltitude() - this.getPassengerCount();
   }
 
-  //https://github.com/labs42io/clean-code-typescript
+  getPassengerCount(){}
+}
+
+class AirForceOne extends Airplane {
+  // ...
+  getCruisingAltitude() {
+    return this.getMaxAltitude();
+  }
+}
+
+class Cessna extends Airplane {
+  // ...
+  getCruisingAltitude() {
+    return this.getMaxAltitude() - this.getFuelExpenditure();
+  }
+
+  getFuelExpenditure(){}
+}
+
+//https://github.com/labs42io/clean-code-typescript

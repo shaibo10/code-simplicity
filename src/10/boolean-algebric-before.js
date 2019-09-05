@@ -1,6 +1,6 @@
-let enableEmpty
-let radioButtonA
-let radioButtonB
+let enableEmpty = false
+let radioButtonA = false
+let radioButtonB = false
 
 function switchRadioButtonAV1() {
   if (enableEmpty) {
@@ -8,29 +8,16 @@ function switchRadioButtonAV1() {
     radioButtonB = radioButtonA ? false : radioButtonB
   } else {
     radioButtonA = radioButtonA ? radioButtonA : !radioButtonA
-
     radioButtonB = !radioButtonA
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //  const A = a ? b : c
 //  const B = a && b || !a && c
+
+
+
+
 //  abc    A    B
 //  000    0    0
 //  001    1    1

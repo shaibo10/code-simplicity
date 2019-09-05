@@ -1,0 +1,36 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "google"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "semi": [
+      "error",
+      "never",
+      {
+        "beforeStatementContinuationChars": "always"
+      }
+    ],
+    "complexity": [
+      "warn",
+      0
+    ],
+    "require-jsdoc": 0,
+    "no-unused-vars": 0,
+    "max-len": 0
+  }
+}

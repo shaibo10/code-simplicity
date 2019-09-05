@@ -1,6 +1,6 @@
-let enableEmpty
-let radioButtonA
-let radioButtonB
+let enableEmpty = false
+let radioButtonA = false
+let radioButtonB = false
 
 function switchRadioButtonAV1() {
   if (enableEmpty) {

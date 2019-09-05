@@ -10,11 +10,11 @@ interface ISegmentGroup {
 }
 
 function getSegmentName(segment: Promise<ISegmentGroup>): Promise<string> {
-  return segment.then(segment => segment.name + segment.provider);
+  return segment.then((segment) => segment.name + segment.provider)
 }
 
 function getSegmentCost(segment: Promise<ISegmentGroup>): Promise<number> {
   return segment
-    .then(segment => segment.effectiveSize * segment.dataVendorCost)
-    .catch(() => 0);
+      .then((segment) => segment.effectiveSize * segment.dataVendorCost)
+      .catch(() => 0)
 }

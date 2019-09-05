@@ -1,7 +1,5 @@
-import { platform } from "os";
-
 class Platform {
-    
+
   /* ... */
 }
 class OperatingSystem {
@@ -24,24 +22,23 @@ class PlatformList {
     public platform: string;
     public operatingSystems: OperatingSystem[];
     public browsers: Browser[];
-  
+
     constructor({
       platform = '',
       operatingSystems = [],
-      browsers = []
+      browsers = [],
     }: IPlatformsList = {}) {
-      this.platform = platform;
-      this.operatingSystems = operatingSystems;
-      this.browsers = browsers;
+      this.platform = platform
+      this.operatingSystems = operatingSystems
+      this.browsers = browsers
     }
-  }
+}
 
-function isSupported(platforms: PlatformList){
-    
-    let hasSupportedPlatform = platforms.platform.replace('.','') !== 'not valid platform name'
-    let hasSupportedBrowser = platforms.browsers.some(browser => browser.supportArrowFunctions)
-    let hasSupportedOs = platforms.operatingSystems.every(os => os.name === 'linux')
-    
-    return hasSupportedBrowser && hasSupportedPlatform && hasSupportedOs
+function isSupported(platforms: PlatformList) {
+  const hasSupportedPlatform = platforms.platform.replace('.', '') !== 'not valid platform name'
+  const hasSupportedBrowser = platforms.browsers.some((browser) => browser.supportArrowFunctions)
+  const hasSupportedOs = platforms.operatingSystems.every((os) => os.name === 'linux')
+
+  return hasSupportedBrowser && hasSupportedPlatform && hasSupportedOs
 }
 

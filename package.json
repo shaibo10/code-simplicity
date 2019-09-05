@@ -4,7 +4,8 @@
   "description": "practical code refactoring examples to reduce code cyclomatic complexity",
   "main": "index.js",
   "scripts": {
-    "test": "tslint --config ./tslint.json ./**/*.*"
+    "complexity": "eslint ./src/**/*.ts --fix",
+    "challenge-score": "eslint src/11/the-challenge.ts --fix | sed -n '4p'"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,13 @@
   "dependencies": {
     "tslint": "^5.19.0",
     "typescript": "^3.5.3"
+
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "@typescript-eslint/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/parser": "^2.1.0",
+    "eslint": "^6.3.0",
+    "eslint-config-google": "^0.14.0"
   }
 }

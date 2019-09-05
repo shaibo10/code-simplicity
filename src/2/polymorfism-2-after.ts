@@ -1,11 +1,9 @@
-
 class Location {
-  constructor(name: string){
-  }
+  constructor(name: string) {}
 }
 
 interface IVehicle {
-  move: (to: Location) => void
+  move: (to: Location) => void;
 }
 
 function travelToTexas(vehicle: IVehicle) {

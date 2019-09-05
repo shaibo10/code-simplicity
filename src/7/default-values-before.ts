@@ -15,19 +15,18 @@ interface IPlatformsList {
   browsers?: Browser[];
 }
 
-function isSupported(platforms: IPlatformsList){
-    
-    let hasSupportedPlatform = true
-    let hasSupportedBrowser = true
-    
-    if (platforms.platform){
-        hasSupportedPlatform = platforms.platform.replace('.','') !== 'not valid platform name'
-    }
+function isSupported(platforms: IPlatformsList) {
+  let hasSupportedPlatform = true
+  let hasSupportedBrowser = true
 
-    if (platforms.browsers){
-        hasSupportedBrowser = platforms.browsers.some(browser=> browser.supportArrowFunctions)
-    }
+  if (platforms.platform) {
+    hasSupportedPlatform = platforms.platform.replace('.', '') !== 'not valid platform name'
+  }
 
-    return hasSupportedBrowser && hasSupportedPlatform
+  if (platforms.browsers) {
+    hasSupportedBrowser = platforms.browsers.some((browser)=> browser.supportArrowFunctions)
+  }
+
+  return hasSupportedBrowser && hasSupportedPlatform
 }
 
