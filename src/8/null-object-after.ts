@@ -9,7 +9,7 @@ interface ISegmentGroup {
   provider?: string
 }
 
-interface INullObject{
+interface INullObject {
   isEmpty: () => boolean
 }
 
@@ -27,7 +27,7 @@ class SegmentGroup implements ISegmentGroup, INullObject {
     effectiveSize = 0,
     dataVendorCost = 0,
     provider = '',
-  } : ISegmentGroup) {
+  } : ISegmentGroup = {} as ISegmentGroup) {
     this.id = id
     this.name = name
     this.effectiveSize = effectiveSize
@@ -47,4 +47,12 @@ class SegmentGroup implements ISegmentGroup, INullObject {
     return this.effectiveSize * this.dataVendorCost
   }
 }
+
+// function getSegmentName(segment: SegmentGroup): string {
+//   return segment.getSegmentName()
+// }
+//
+// function getSegmentCost(segment: SegmentGroup): number {
+//   return segment.getSegmentCost()
+// }
 

@@ -4,7 +4,7 @@ enum CustomerType {
   Diy = 'diy'
 }
 
-class shipingPayment {
+class shippingPayment {
   getCost(customerType: CustomerType, shippingData) {
     const companyExtraServicesUsedCost = this.getCompanyExtraServicesCost(
         shippingData
@@ -31,7 +31,7 @@ class ShippingCostStrategy {
     [CustomerType.Managed, new ManagedCustomerShipping()],
     [CustomerType.Diy, new DiyCustomerShipping()],
   ]);
-  strategy: any;
+  strategy: ICustomerShippingCost;
 
   constructor(type: CustomerType) {
     this.strategy = this.shippingCostStrategies.get(type)
