@@ -1,4 +1,4 @@
-class shipingPayment {
+class shippingPayment {
   getCost(customerType, shippingData) {
     const shippingServicesUsed = shippingData.shippingServices
     const minimumShippingCost = this.getMinimumShippingCost()

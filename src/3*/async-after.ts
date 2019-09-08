@@ -21,7 +21,6 @@ function doSomeThingWithCarsFactories(ids) {
 
 // in the controller
 class CarsController {
-  carsService
   getFactories({carIds}, response) {
     this.carsService
         .getCarFactories(carIds)
@@ -38,6 +37,7 @@ class CarsController {
     errorResponse.send()
   }
 
+  carsService
   // ..
 }
 

@@ -25,9 +25,7 @@
   },
   "homepage": "https://github.com/shaibo10/code-simplicity#readme",
   "dependencies": {
-    "tslint": "^5.19.0",
     "typescript": "^3.5.3"
-
   },
   "devDependencies": {
     "prettier": "^1.18.2",

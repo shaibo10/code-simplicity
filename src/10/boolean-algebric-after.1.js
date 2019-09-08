@@ -14,12 +14,6 @@ function switchRadioButtonAV1() {
 
 
 
-
-
-
-
-
-
 // if(a){
 //  x = b
 // } else {

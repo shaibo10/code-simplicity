@@ -8,6 +8,7 @@
 ```npm i```
 * Run the script "challenge-score" to get the complexity score of the challenge <br>
 ```npm run challenge-score```
+* __An important rule__ - you can't be sure that the server will return all the properties of the book, you need to validate that each property is exists
 * Start to refactor the challenge code and test the complexity each time <br>
 ```src/11/the-challenge.ts``` 
 * You can run the code using online IDE to test the functionality - https://stackblitz.com/edit/typescript

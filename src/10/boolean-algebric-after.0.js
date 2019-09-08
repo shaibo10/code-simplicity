@@ -8,7 +8,6 @@ function switchRadioButtonAV1() {
     radioButtonB = radioButtonA && false || !radioButtonA && radioButtonB
   } else {
     radioButtonA = radioButtonA && radioButtonA || !radioButtonA && !radioButtonA
-
     radioButtonB = !radioButtonA
   }
 }

@@ -9,12 +9,6 @@ function switchRadioButtonAV1() {
 
 
 
-
-
-
-
-
-
 // f = a && b || !b 
 
 // abf
@@ -26,5 +20,7 @@ function switchRadioButtonAV1() {
 // Demorgan
 // f= !(!a && b) = a || !b
 // f = a && b || !b = a || !b
+
+// f = a && b || !b === a || !b
 
 

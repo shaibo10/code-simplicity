@@ -11,13 +11,15 @@ const users = [
   {name: 'li', age: 3, active: true},
 ]
 
-function getYangUserNames(users: IUser[]): string[] {
-  const isYangUser = (user) => user.age < 18 && user.active && user.age > 0
+function getYongUserNames(users: IUser[]): string[] {
+  const isYongUser = (user) => user.age < 18 && user.active && user.age > 0
   const capitalizeUserFirstLetter = (user) => capitalizeFirstLetter(user.name)
 
-  return users.filter(isYangUser).map(capitalizeUserFirstLetter)
+  return users.filter(isYongUser).map(capitalizeUserFirstLetter)
 }
 
 function capitalizeFirstLetter(str) {
   return str.charAt(0).toUpperCase() + str.slice(1)
 }
+
+getYongUserNames(users)

@@ -13,7 +13,6 @@ interface INullObject {
   isEmpty: () => boolean
 }
 
-
 class SegmentGroup implements ISegmentGroup, INullObject {
   id: string
   name: string
@@ -48,6 +47,7 @@ class SegmentGroup implements ISegmentGroup, INullObject {
   }
 }
 
+// Anemic domain model OO anti-pattern
 // function getSegmentName(segment: SegmentGroup): string {
 //   return segment.getSegmentName()
 // }
