@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "complexity": "eslint ./src/**/*.ts --fix",
-    "challenge-score": "eslint src/11/the-challenge.ts --fix | sed -n '4p'"
+    "challenge-score": "eslint src/11/the-challenge.ts --fix"
   },
   "repository": {
     "type": "git",
