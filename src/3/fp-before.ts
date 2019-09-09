@@ -11,17 +11,17 @@ const users = [
   {name: 'li', age: 3, active: true},
 ]
 
-function getYongUserNames(users: IUser[]): string[] {
-  const yongUserNames = []
+function getYoungUserNames(users: IUser[]): string[] {
+  const youngUserNames = []
 
   for (let index = 0; index < users.length; index++) {
     if (users[index].age < 18 && users[index].active) {
       const userName = capitalizeFirstLetter(users[index].name)
-      yongUserNames.push(userName)
+      youngUserNames.push(userName)
     }
   }
 
-  return yongUserNames
+  return youngUserNames
 }
 
 function capitalizeFirstLetter(str) {
