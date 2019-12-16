@@ -14,3 +14,5 @@
 * You can run the code using online IDE to test the functionality - https://stackblitz.com/edit/typescript
 * You can fake it (ESlint test the complexity in the function level), But try to improve the complexity of the all application <br>
 using advanced techniques you saw in the presentation and other examples from this repository 
+
+* The full presentation on code simplicity - https://www.youtube.com/watch?v=RjQfYo8hn18
